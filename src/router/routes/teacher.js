@@ -38,7 +38,7 @@ export default [
       {
         path: 'grading',
         name: 'teacher-grading',
-        component: () => import('@/views/teacher/GradingForm.vue')
+        component: () => import('@/views/teacher/GradeAssignments.vue')
       },
       {
         path: 'students',

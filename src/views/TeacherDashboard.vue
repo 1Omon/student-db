@@ -11,29 +11,29 @@
         <p class="teacher-id">ID: {{ teacher.id }}</p>
       </div>
       <nav>
-        <router-link to="/teacher" exact active-class="active">
+        <router-link to="/teacher" exact-active-class="active" active-class="active">
           <i class="icon-dashboard"></i> Dashboard
         </router-link>
-        <router-link to="/teacher/classes" active-class="active">
+        <router-link to="/teacher/classes" exact-active-class="active" active-class="active">
           <i class="icon-classes"></i> My Classes
           <span class="badge" v-if="coursesTeaching.length">{{ coursesTeaching.length }}</span>
         </router-link>
-        <router-link to="/teacher/attendance" active-class="active">
+        <router-link to="/teacher/attendance" exact-active-class="active" active-class="active">
           <i class="icon-attendance"></i> Take Attendance
         </router-link>
-        <router-link to="/teacher/grading" active-class="active">
+        <router-link to="/teacher/grading" exact-active-class="active" active-class="active">
           <i class="icon-grading"></i> Grade Students
           <span class="badge" v-if="ungradedCount">{{ ungradedCount }}</span>
         </router-link>
-        <router-link to="/teacher/students" active-class="active">
+        <router-link to="/teacher/students" exact-active-class="active" active-class="active">
           <i class="icon-students"></i> Manage Students
           <span class="badge" v-if="totalStudents">{{ totalStudents }}</span>
         </router-link>
-        <router-link to="/teacher/assignments" active-class="active">
+        <router-link to="/teacher/assignments" exact-active-class="active" active-class="active">
           <i class="icon-assignments"></i> Assignments
           <span class="badge" v-if="assignmentsCreated.length">{{ assignmentsCreated.length }}</span>
         </router-link>
-        <router-link to="/teacher/manage-class" active-class="active">
+        <router-link to="/teacher/manage-class" exact-active-class="active" active-class="active">
           <i class="icon-manage"></i> Manage Class
         </router-link>
       </nav>
